@@ -1,59 +1,98 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f6f9;
-  color: #222;
+  background-color: #f8f9fa;
+  color: #333;
 }
+
 header {
-  background: linear-gradient(to right, #001f3f, #0074D9);
-  color: white;
-  padding: 2rem;
+  background-color: #0033A0;
+  color: #fff;
+  padding: 2rem 0;
   text-align: center;
 }
-.products {
-  padding: 2rem;
-  text-align: center;
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #cce3ff;
 }
-.card {
-  background: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.form-section {
-  padding: 2rem;
-  background: #fff;
-}
-form {
-  max-width: 400px;
+
+.container {
+  width: 90%;
+  max-width: 700px;
   margin: auto;
+}
+
+.hero {
+  background-color: #00B2E2;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.form-section {
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+form {
   display: flex;
   flex-direction: column;
 }
-form input, form select {
-  margin-bottom: 1rem;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+
+label {
+  margin-top: 1rem;
+  font-weight: 600;
 }
-form button {
+
+input, select {
   padding: 0.75rem;
-  background: #0074D9;
-  color: white;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #0033A0;
+  color: #fff;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
+  font-weight: bold;
   cursor: pointer;
 }
+
+button:hover {
+  background-color: #002277;
+}
+
+#thanksMsg {
+  margin-top: 1rem;
+  color: green;
+}
+
 footer {
-  background: #001f3f;
-  color: white;
-  padding: 1rem;
+  background-color: #0033A0;
+  color: #fff;
+  padding: 1rem 0;
   text-align: center;
+  margin-top: 2rem;
+}
+
+footer .socials a {
+  color: #00B2E2;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+footer .socials a:hover {
+  text-decoration: underline;
 }

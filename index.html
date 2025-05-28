@@ -23,23 +23,26 @@
     </div>
   </section>
 
-  <section class="form-section">
-    <h2>Get a Personalized Quote</h2>
-    <form id="leadForm">
-      <input type="text" name="name" placeholder="Full Name" required/>
-      <input type="email" name="email" placeholder="Email Address" required/>
-      <input type="tel" name="phone" placeholder="Phone Number" required/>
-      <select name="interest" required>
-        <option value="">Select Insurance Product</option>
-        <option value="Life Insurance">Life Insurance</option>
-        <option value="Medical Cover">Medical Cover</option>
-        <option value="Motor Insurance">Motor Insurance</option>
-        <option value="Education Plan">Education Plan</option>
-        <option value="Pension Scheme">Pension Scheme</option>
-      </select>
-      <label><input type="checkbox" required/> I agree to be contacted and accept the privacy policy.</label>
-      <button type="submit">Submit</button>
-    </form>
+  <form action="https://formspree.io/f/mzzrnjjl" method="POST">
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="phone" placeholder="Phone Number" required>
+
+  <select name="product" required>
+    <option value="">Select a Product</option>
+    <option value="MMF (Money Market Fund)">MMF (Money Market Fund)</option>
+    <option value="Bond Plus">Bond Plus</option>
+    <option value="Wealth Management">Wealth Management</option>
+    <option value="Life Insurance">Life Insurance</option>
+    <option value="Medical Cover">Medical Cover</option>
+    <option value="Education Plan">Education Plan</option>
+    <option value="Pension Plan">Pension Plan</option>
+    <option value="Investment Account">Investment Account</option>
+  </select>
+
+  <textarea name="message" placeholder="Message (Optional)"></textarea>
+  <button type="submit">Get Quote</button>
+  </form>
     <p id="statusMsg"></p>
   </section>
 

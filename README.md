@@ -1,6 +1,6 @@
-# Gavnor – AI Insurance Assistant
+# InsurAIte – AI Insurance Assistant
 
-**Gavnor** is a free, AI-powered landing page built for insurance affiliate marketers. It is designed to collect leads for Britam insurance products including life, medical, motor, pension, and education plans.
+**InsurAIte** is a free, AI-powered landing page built for insurance affiliate marketers. It is designed to collect leads for Britam insurance products including life, medical, motor, pension, and education plans.
 
 ## Features
 

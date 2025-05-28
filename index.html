@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gavnor – Your AI Insurance Assistant</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Gavnor – Your AI Insurance Assistant</h1>
+    <p>Powered by AI. Focused on You. Get personalized insurance solutions today.</p>
+  </header>
+
+  <section class="products">
+    <h2>Explore Britam Products</h2>
+    <div class="cards">
+      <div class="card">Life Insurance</div>
+      <div class="card">Medical Cover</div>
+      <div class="card">Motor Insurance</div>
+      <div class="card">Education Plan</div>
+      <div class="card">Pension Scheme</div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Get a Personalized Quote</h2>
+    <form id="leadForm">
+      <input type="text" name="name" placeholder="Full Name" required/>
+      <input type="email" name="email" placeholder="Email Address" required/>
+      <input type="tel" name="phone" placeholder="Phone Number" required/>
+      <select name="interest" required>
+        <option value="">Select Insurance Product</option>
+        <option value="Life Insurance">Life Insurance</option>
+        <option value="Medical Cover">Medical Cover</option>
+        <option value="Motor Insurance">Motor Insurance</option>
+        <option value="Education Plan">Education Plan</option>
+        <option value="Pension Scheme">Pension Scheme</option>
+      </select>
+      <label><input type="checkbox" required/> I agree to be contacted and accept the privacy policy.</label>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="statusMsg"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gavnor Insurance. An affiliate of Britam. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

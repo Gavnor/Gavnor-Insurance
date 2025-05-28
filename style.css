@@ -1,0 +1,59 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  color: #222;
+}
+header {
+  background: linear-gradient(to right, #001f3f, #0074D9);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.products {
+  padding: 2rem;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.card {
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.form-section {
+  padding: 2rem;
+  background: #fff;
+}
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+form input, form select {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+form button {
+  padding: 0.75rem;
+  background: #0074D9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+footer {
+  background: #001f3f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}

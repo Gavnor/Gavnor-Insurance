@@ -3,53 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gavnor – Your AI Insurance Assistant</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>InsurAIte - Your Smart Insurance Affiliate Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Gavnor – Your AI Insurance Assistant</h1>
-    <p>Powered by AI. Focused on You. Get personalized insurance solutions today.</p>
+    <div class="container">
+      <h1>InsurAIte</h1>
+      <p class="tagline">Your Smart Insurance Affiliate Assistant</p>
+    </div>
   </header>
 
-  <section class="products">
-    <h2>Explore Britam Products</h2>
-    <div class="cards">
-      <div class="card">Life Insurance</div>
-      <div class="card">Medical Cover</div>
-      <div class="card">Motor Insurance</div>
-      <div class="card">Education Plan</div>
-      <div class="card">Pension Scheme</div>
+  <section class="hero">
+    <div class="container">
+      <h2>Discover Britam Products</h2>
+      <p>Choose the best options tailored to your financial goals.</p>
+    </div>
+  </section>
+<form action="https://formspree.io/f/mzzrnjjl" method="POST" id="leadForm">
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" required />
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" required />
+
+  <label for="product">Select Product</label>
+  <select id="product" name="product" required>
+    <option value="">-- Choose One --</option>
+    <option value="MMF">MMF (Money Market Fund)</option>
+    <option value="Bond Plus">Bond Plus</option>
+    <option value="Unit Trust">Unit Trust</option>
+    <option value="Life Insurance">Life Insurance</option>
+  </select>
+
+  <button type="submit">Submit Interest</button>
+</form>
+ 
     </div>
   </section>
 
-  <form action="https://formspree.io/f/mzzrnjjl" method="POST">
-  <input type="text" name="name" placeholder="Full Name" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <input type="text" name="phone" placeholder="Phone Number" required>
-
-  <select name="product" required>
-    <option value="">Select a Product</option>
-    <option value="MMF (Money Market Fund)">MMF (Money Market Fund)</option>
-    <option value="Bond Plus">Bond Plus</option>
-    <option value="Wealth Management">Wealth Management</option>
-    <option value="Life Insurance">Life Insurance</option>
-    <option value="Medical Cover">Medical Cover</option>
-    <option value="Education Plan">Education Plan</option>
-    <option value="Pension Plan">Pension Plan</option>
-    <option value="Investment Account">Investment Account</option>
-  </select>
-
-  <textarea name="message" placeholder="Message (Optional)"></textarea>
-  <button type="submit">Get Quote</button>
-  </form>
-    <p id="statusMsg"></p>
-  </section>
-
   <footer>
-    <p>&copy; 2025 Gavnor Insurance. An affiliate of Britam. All rights reserved.</p>
+    <div class="container">
+      <p>© 2025 InsurAIte | Powered by Gavnor AI</p>
+      <div class="socials">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://x.com" target="_blank">X</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </div>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script>
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('thanksMsg').style.display = 'block';
+      // You can add Google Apps Script integration here
+    });
+  </script>
 </body>
-</html>
+  </html>

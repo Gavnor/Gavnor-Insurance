@@ -1,9 +1,9 @@
-/* Updated Global Styles */
+/* Global Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f2f5;
+  background-color: #f5f7fa;
   color: #333;
 }
 
@@ -14,10 +14,10 @@ body {
   padding: 1em;
 }
 
-/* Header with Logo and Navigation */
+/* Header */
 header {
   background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   padding: 1em 0;
   position: sticky;
   top: 0;
@@ -31,9 +31,9 @@ header {
 }
 
 .logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #007bff;
+  font-size: 1.75em;
+  font-weight: 800;
+  color: #0056b3;
   text-decoration: none;
 }
 
@@ -55,10 +55,9 @@ nav a:hover {
   background-color: #e9f1ff;
 }
 
-/* Dropdown Menu */
+/* Dropdown */
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
@@ -66,7 +65,7 @@ nav a:hover {
   position: absolute;
   background-color: #fff;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1;
   border-radius: 4px;
 }
@@ -74,7 +73,6 @@ nav a:hover {
 .dropdown-content a {
   color: #333;
   padding: 0.75em 1em;
-  text-decoration: none;
   display: block;
 }
 
@@ -102,12 +100,69 @@ nav a:hover {
   background: #0056b3;
 }
 
-/* Article Section Styling */
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  padding: 4em 1em;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.25em;
+  max-width: 600px;
+  margin: 0 auto 1.5em;
+}
+
+/* Features Section */
+.features {
+  background-color: #ffffff;
+  padding: 3em 1em;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  color: #0056b3;
+}
+
+.feature-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.feature-box {
+  background-color: #f0f4ff;
+  border-radius: 8px;
+  padding: 2em;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box h3 {
+  margin-bottom: 0.5em;
+  color: #007bff;
+}
+
+/* Article Section */
 .life-insurance-article {
   background-color: #ffffff;
-  padding: 2em 0;
-  border-top: 1px solid #ddd;
+  padding: 3em 1em;
   margin-top: 2em;
+  border-top: 1px solid #ddd;
 }
 
 .life-insurance-article h2,
@@ -116,8 +171,8 @@ nav a:hover {
 }
 
 .life-insurance-article ul {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 1.5em;
 }
 
 .life-insurance-article li {
@@ -125,9 +180,34 @@ nav a:hover {
   font-size: 1rem;
 }
 
+/* Testimonials Section */
+.testimonials {
+  background-color: #f9fafe;
+  padding: 3em 1em;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #0056b3;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 1em auto;
+  font-style: italic;
+  background: white;
+  padding: 1.5em;
+  border-left: 5px solid #007bff;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Footer */
 footer {
   text-align: center;
   font-size: 0.875em;
   color: #888;
   padding: 2em 0;
-  }
+                              }

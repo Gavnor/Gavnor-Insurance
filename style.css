@@ -15,6 +15,10 @@ body {
   padding: 1em;
 }
 
+body {
+  background-color: lightyellow;
+}
+
 /* Header */
 header {
   background-color: #ffffff;

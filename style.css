@@ -1,158 +1,133 @@
+/* Updated Global Styles */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background-color: #f0f2f5;
   color: #333;
-}
-
-header {
-  background-color: #0033A0;
-  color: #fff;
-  padding: 2rem 0;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-.tagline {
-  margin-top: 0.5rem;
-  font-size: 1.1rem;
-  color: #cce3ff;
 }
 
 .container {
   width: 90%;
-  max-width: 700px;
+  max-width: 1200px;
   margin: auto;
+  padding: 1em;
 }
 
-.hero {
-  background-color: #00B2E2;
-  color: #fff;
-  padding: 2rem 1rem;
-  text-align: center;
+/* Header with Logo and Navigation */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* === Product Section Styles === */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding-top: 1rem;
-}
-
-.product-card {
-  background: #f9f9f9;
-  border-left: 5px solid #0077b6;
-  padding: 1.5rem;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-
-.product-card h3 {
-  margin-top: 0;
-  color: #0077b6;
-}
-
-.form-section {
-  padding: 2rem 1rem;
-  background-color: #fff;
-}
-
-form {
+.header-container {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-label {
-  margin-top: 1rem;
-  font-weight: 600;
-}
-
-input, select {
-  padding: 0.75rem;
-  margin-top: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  margin-top: 1.5rem;
-  padding: 0.75rem;
-  background-color: #0033A0;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+.logo {
+  font-size: 1.5em;
   font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #002277;
-}
-
-#thanksMsg {
-  margin-top: 1rem;
-  color: green;
-}
-
-footer {
-  background-color: #0033A0;
-  color: #fff;
-  padding: 1rem 0;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-footer .socials a {
-  color: #00B2E2;
-  margin: 0 1rem;
+  color: #007bff;
   text-decoration: none;
 }
 
-footer .socials a:hover {
-  text-decoration: underline;
+nav {
+  display: flex;
+  gap: 1em;
+  align-items: center;
 }
 
-.site-logo {
-  height: 50px;
-  object-fit: contain;
-  margin-right: 10px;
-}
-
-#faqs {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-}
-
-#faqs h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.faq {
-  margin-bottom: 20px;
-}
-
-.faq h3 {
-  font-size: 18px;
-  margin-bottom: 5px;
+nav a {
+  text-decoration: none;
   color: #333;
+  padding: 0.5em 0.75em;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-.faq p {
-  font-size: 16px;
-  color: #555;
-  margin: 0;
+nav a:hover {
+  background-color: #e9f1ff;
 }
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* CTA Button */
+.cta-button {
+  background: #007bff;
+  color: white;
+  padding: 0.75em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #0056b3;
+}
+
+/* Article Section Styling */
+.life-insurance-article {
+  background-color: #ffffff;
+  padding: 2em 0;
+  border-top: 1px solid #ddd;
+  margin-top: 2em;
+}
+
+.life-insurance-article h2,
+.life-insurance-article h3 {
+  color: #2c3e50;
+}
+
+.life-insurance-article ul {
+  list-style: none;
+  padding: 0;
+}
+
+.life-insurance-article li {
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.875em;
+  color: #888;
+  padding: 2em 0;
+  }

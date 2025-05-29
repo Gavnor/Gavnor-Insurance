@@ -4,7 +4,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f5f7fa;
-  color: #333;
+  color: #222;
+  line-height: 1.6;
 }
 
 .container {
@@ -17,8 +18,8 @@ body {
 /* Header */
 header {
   background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  padding: 1em 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 1.25em 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -31,9 +32,9 @@ header {
 }
 
 .logo {
-  font-size: 1.75em;
-  font-weight: 800;
-  color: #0056b3;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #00aaff;
   text-decoration: none;
 }
 
@@ -47,12 +48,12 @@ nav a {
   text-decoration: none;
   color: #333;
   padding: 0.5em 0.75em;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: background-color 0.3s;
 }
 
 nav a:hover {
-  background-color: #e9f1ff;
+  background-color: #e3f2ff;
 }
 
 /* Dropdown */
@@ -63,48 +64,35 @@ nav a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  border-radius: 4px;
-}
-
-.dropdown-content a {
-  color: #333;
-  padding: 0.75em 1em;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  min-width: 180px;
+  top: 100%;
+  left: 0;
+  z-index: 10;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* CTA Button */
-.cta-button {
-  background: #007bff;
-  color: white;
-  padding: 0.75em 1.5em;
-  border-radius: 8px;
+.dropdown-content a {
+  display: block;
+  padding: 0.75em 1em;
+  color: #333;
   text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  transition: background 0.3s;
 }
 
-.cta-button:hover {
-  background: #0056b3;
+.dropdown-content a:hover {
+  background-color: #f0f8ff;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #007bff, #00c6ff);
-  color: white;
-  padding: 4em 1em;
+  background: linear-gradient(135deg, #00aaff, #0088cc);
+  color: #fff;
+  padding: 4em 0;
   text-align: center;
 }
 
@@ -114,37 +102,75 @@ nav a:hover {
 }
 
 .hero p {
-  font-size: 1.25em;
+  font-size: 1.2em;
   max-width: 600px;
-  margin: 0 auto 1.5em;
+  margin: auto;
+  margin-bottom: 1.5em;
+}
+
+.cta-button {
+  background-color: #ffffff;
+  color: #0077cc;
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e3f2ff;
+}
+
+/* Article Section */
+.life-insurance-article {
+  background-color: #ffffff;
+  padding: 3em 0;
+  margin-top: 2em;
+  border-top: 2px solid #eee;
+}
+
+.life-insurance-article h2,
+.life-insurance-article h3 {
+  color: #003366;
+}
+
+.life-insurance-article ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.life-insurance-article li::before {
+  content: "•";
+  color: #0077cc;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 /* Features Section */
 .features {
-  background-color: #ffffff;
-  padding: 3em 1em;
-  text-align: center;
+  background-color: #f9fbfd;
+  padding: 3em 0;
+  display: flex;
+  justify-content: center;
 }
 
-.features h2 {
-  font-size: 2em;
-  margin-bottom: 1.5em;
-  color: #0056b3;
-}
-
-.feature-boxes {
+.features .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 2em;
+  justify-content: space-between;
 }
 
 .feature-box {
-  background-color: #f0f4ff;
+  background-color: #fff;
+  padding: 1.5em;
+  flex: 1 1 30%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
-  padding: 2em;
-  width: 300px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
@@ -153,61 +179,16 @@ nav a:hover {
 }
 
 .feature-box h3 {
+  color: #005b99;
   margin-bottom: 0.5em;
-  color: #007bff;
-}
-
-/* Article Section */
-.life-insurance-article {
-  background-color: #ffffff;
-  padding: 3em 1em;
-  margin-top: 2em;
-  border-top: 1px solid #ddd;
-}
-
-.life-insurance-article h2,
-.life-insurance-article h3 {
-  color: #2c3e50;
-}
-
-.life-insurance-article ul {
-  list-style: disc;
-  padding-left: 1.5em;
-}
-
-.life-insurance-article li {
-  margin-bottom: 0.5em;
-  font-size: 1rem;
-}
-
-/* Testimonials Section */
-.testimonials {
-  background-color: #f9fafe;
-  padding: 3em 1em;
-  text-align: center;
-}
-
-.testimonials h2 {
-  font-size: 2em;
-  margin-bottom: 1em;
-  color: #0056b3;
-}
-
-.testimonial {
-  max-width: 600px;
-  margin: 1em auto;
-  font-style: italic;
-  background: white;
-  padding: 1.5em;
-  border-left: 5px solid #007bff;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  font-size: 0.875em;
-  color: #888;
+  background-color: #ffffff;
   padding: 2em 0;
-                              }
+  text-align: center;
+  color: #888;
+  font-size: 0.9em;
+  border-top: 1px solid #ddd;
+}

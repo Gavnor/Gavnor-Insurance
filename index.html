@@ -2,166 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="title" content="InsurAIte | Smart Britam Insurance Affiliate" />
-  <meta name="description" content="InsurAIte helps you explore and compare Britam insurance products easily. Get smart coverage insights and exclusive affiliate support." />
-  <meta name="keywords" content="Insurance Kenya, Britam Affiliate, Money Market Fund, Bond Plus, Lead generation" />
-  <meta name="author" content="InsurAIte" />
-  <meta name="google-site-verification" content="hZpK3XlDCB1yHVsPTmrB3YNmV77VN0dE7gaMrpm2ky8" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="InsurAIte | Smart Britam Insurance Affiliate" />
-  <meta property="og:description" content="Explore Britam MMF, Bond Plus, and more. Let InsurAIte help you choose wisely." />
-  <meta property="og:url" content="https://gavnor.github.io/InsurAIte/" />
-  <meta property="og:image" content="https://gavnor.github.io/InsurAIte/assets/insuraite-share.jpg" />
-
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="InsurAIte | Smart Britam Insurance Affiliate" />
-  <meta name="twitter:description" content="Smart coverage for smart people. Let InsurAIte guide your Britam choices." />
-  <meta name="twitter:image" content="https://gavnor.github.io/InsurAIte/assets/insuraite-share.jpg" />
-
-  <title>InsurAIte - Your Smart Insurance Affiliate Assistant</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="logo-square.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Life Insurance Information</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="container header-flex">
-      <a href="index.html">
-        <img src="logo-banner.png" alt="InsurAIte Logo" class="site-logo" />
-      </a>
-      <div class="site-title">
-        <h1>InsurAIte</h1>
-        <p class="tagline">Your Smart Insurance Affiliate Assistant</p>
-      </div>
+
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo">LifeSecure</a>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <div class="dropdown">
+          <a href="#">Services</a>
+          <div class="dropdown-content">
+            <a href="#">Term Life</a>
+            <a href="#">Whole Life</a>
+            <a href="#">Investment Plans</a>
+          </div>
+        </div>
+        <a href="#">Contact</a>
+        <a href="#" class="cta-button">Get a Quote</a>
+      </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container text-center">
-      <h2>Discover Britam Products</h2>
-      <p>Choose the best options tailored to your financial goals.</p>
-    </div>
-  </section>
+  <main class="life-insurance-article container">
+    <h2>Understanding Life Insurance</h2>
+    <p>Life insurance provides financial security for your loved ones in the event of your passing. Here's a quick overview of its key types and benefits:</p>
 
-  <section id="products" class="section">
-    <div class="container">
-      <h2 class="section-title">Our Insurance Solutions</h2>
-      <div class="product-grid">
-        <!-- Repeat this block per product -->
-        <div class="product-card">
-          <h3>Money Market Fund (MMF)</h3>
-          <p>Earn daily interest with one of the safest, most liquid investments in Kenya.</p>
-        </div>
-        <div class="product-card">
-          <h3>Bond Plus Fund</h3>
-          <p>Grow your wealth with stable returns from government and corporate bonds.</p>
-        </div>
-        <div class="product-card">
-          <h3>Life Insurance</h3>
-          <p>Protect your loved ones with flexible life cover options.</p>
-        </div>
-        <div class="product-card">
-          <h3>Medical Cover</h3>
-          <p>Access quality healthcare with affordable individual or family medical plans.</p>
-        </div>
-        <div class="product-card">
-          <h3>Pension Plans</h3>
-          <p>Secure your retirement with structured savings and tax benefits.</p>
-        </div>
-        <div class="product-card">
-          <h3>General Insurance</h3>
-          <p>Cover your car, home, and business with reliable protection.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <h3>Types of Life Insurance</h3>
+    <ul>
+      <li><strong>Term Life Insurance:</strong> Offers coverage for a set period at lower premiums.</li>
+      <li><strong>Whole Life Insurance:</strong> Provides lifelong coverage and builds cash value over time.</li>
+      <li><strong>Universal Life Insurance:</strong> Includes flexible premiums and investment components.</li>
+    </ul>
 
-  <section id="lead" class="section bg-light">
-    <div class="container">
-      <h2>Submit Your Interest</h2>
-      <form action="https://formspree.io/f/mzzrnjjl" method="POST" id="leadForm" class="form-grid">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required />
+    <h3>Benefits</h3>
+    <ul>
+      <li>Peace of mind for your family’s financial future</li>
+      <li>Debt and mortgage protection</li>
+      <li>Supplemental retirement income options</li>
+      <li>Tax-free death benefit</li>
+    </ul>
+  </main>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="product">Interested Product</label>
-        <select id="product" name="product" required>
-          <option value="" disabled selected>Select one</option>
-          <option value="MMF">Money Market Fund</option>
-          <option value="Bond Plus">Bond Plus Fund</option>
-          <option value="Life Insurance">Life Insurance</option>
-          <option value="Medical Cover">Medical Cover</option>
-          <option value="Pension Plans">Pension Plans</option>
-          <option value="General Insurance">General Insurance</option>
-        </select>
-
-        <button type="submit" class="cta-button">Submit Interest</button>
-        <p id="form-status" style="display:none;">Thank you! We'll get back to you shortly.</p>
-      </form>
-    </div>
-  </section>
-
-  <section id="life-insurance" class="section">
-    <div class="container">
-      <h2>Secure Your Future with Britam Life Insurance</h2>
-      <p>Your family's financial security shouldn't be left to chance. Explore these flexible life insurance options from Britam:</p>
-
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="https://ke.britam.com/images/Products/dhamana.jpg" alt="Dhamana Plan" />
-          <h3>Dhamana Life Assurance Plan</h3>
-          <p>Flexible savings plan with 5% guaranteed ROI. Premiums from KES 1,000/month.</p>
-          <a href="https://ke.britam.com/save-and-invest/personal/insurance-savings-plans/dhamana" target="_blank">Learn More</a>
-        </div>
-        <div class="product-card">
-          <img src="https://ke.britam.com/images/Products/akiba.jpg" alt="Akiba Plan" />
-          <h3>Akiba Savings Plan</h3>
-          <p>High-return life plan with terms from 5–12 years. Maturity lump sum payout.</p>
-          <a href="https://ke.britam.com/save-and-invest/personal/insurance-savings-plans/akiba" target="_blank">Learn More</a>
-        </div>
-        <div class="product-card">
-          <img src="https://ke.britam.com/images/Products/tegemeo.jpg" alt="Tegemeo Protection Plan" />
-          <h3>Tegemeo Protection Plan</h3>
-          <p>Family protection plan offering financial security in your absence.</p>
-          <a href="https://ke.britam.com/home/personal" target="_blank">Learn More</a>
-        </div>
-      </div>
-
-      <div class="life-insurance-article">
-        <h2>Protect What Matters Most</h2>
-        <img src="family-life-cover.jpg" alt="Happy family under insurance protection" class="responsive-img" />
-        <p><strong>Life is unpredictable — but your family's future doesn't have to be.</strong> Britam provides tailored life insurance to ensure your family is supported in tough times.</p>
-
-        <ul>
-          <li>✅ <strong>Affordable Premiums:</strong> From KES 500/month</li>
-          <li>🏥 <strong>Medical Support:</strong> Critical illness, hospital cash benefits</li>
-          <li>📘 <strong>Education Plans:</strong> Guaranteed payouts for school fees</li>
-          <li>⚰️ <strong>Funeral Benefits:</strong> Instant support when needed</li>
-          <li>📈 <strong>Flexible Payouts:</strong> Lump sum or monthly options</li>
-        </ul>
-
-        <blockquote><em>“When James lost his job unexpectedly, Britam’s education plan kept his daughter in school. Peace of mind you can trust.”</em></blockquote>
-
-        <div class="text-center">
-          <a href="#leadForm" class="cta-button">Secure Your Family's Future</a>
-        </div>
-
-        <p class="note">Britam was named Life Insurance Company of the Year at the 2023 AKI Awards.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 InsurAIte. All rights reserved.</p>
-    </div>
+  <footer>
+    &copy; 2025 LifeSecure. All rights reserved.
   </footer>
+
 </body>
-          </html>
+</html>

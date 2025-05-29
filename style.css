@@ -123,3 +123,9 @@ footer .socials a {
 footer .socials a:hover {
   text-decoration: underline;
 }
+
+.site-logo {
+  height: 50px;
+  object-fit: contain;
+  margin-right: 10px;
+}
